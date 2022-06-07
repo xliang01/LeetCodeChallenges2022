@@ -18,6 +18,10 @@ class SolutionIterative (Solution):
             sum += item
         return sum
 
+class SolutionIterativeSimple (Solution):
+    def maximumWealth(self, accounts: List[List[int]]) -> int:
+        return max(sum(account) for account in accounts)
 
-s = SolutionIterative()
+
+s = SolutionIterativeSimple()
 print(s.maximumWealth([[1,2,3],[3,2,1]]))
