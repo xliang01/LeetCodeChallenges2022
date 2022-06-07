@@ -14,5 +14,10 @@ class SolutionLinear (Solution):
             ans[i + n] = nums[i]
         return ans
 
-s: Solution = SolutionLinear()
+class SolutionLinearSimple (Solution):
+    def getConcatenation(self, nums: List[int]) -> List[int]:
+        return nums * 2
+
+
+s: Solution = SolutionLinearSimple()
 print(s.getConcatenation([0, 1, 2]))
