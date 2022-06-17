@@ -14,6 +14,7 @@ class SolutionNaive (Solution):
                 profit = max(profit, prices[j] - prices[i])
         return profit
 
+# REVIEW: Algo - Min
 class SolutionSliding (Solution):
     def maxProfit(self, prices: List[int]) -> int:
         min_price = float("inf")

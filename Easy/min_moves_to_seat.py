@@ -10,6 +10,7 @@ class SolutionSort (Solution):
         sortedStudents = sorted(students)
         return sum(abs(sortedSeats[i] - sortedStudents[i]) for i in range(0, len(seats)))
 
+# REVIEW: DS - Number Bucket
 # https://leetcode.com/problems/minimum-number-of-moves-to-seat-everyone/discuss/1539518/O(n)-counting-sort-in-Python
 class SolutionNumberBucket (Solution):
     def minMovesToSeat(self, seats: List[int], students: List[int]) -> int:

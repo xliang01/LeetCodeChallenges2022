@@ -25,11 +25,37 @@ class SolutionLoopLookupIterative (Solution):
                 idxMap[num].append(idx)
         return pairs
 
+"""
+    REVIEW: Math - Total number of unique pairs in a list is N * (N - 1) / 2
+    Explaination:
+    
+    List = ABCD
+    Size (N) = 4
+
+    Unique Pairs:
+        AB
+        AC
+        AD
+        BC
+        BD
+        CD
+
+    Count of A pairs = 3 (N - 1)
+    Count of B pairs = 2 (N - 2)
+    Count of C pairs = 1 (N - 3)
+
+    Total pairs count = 
+        (N - 1) + (N - 2) + ... (N - (N - 1))   which simplifies to
+        1 + 2 + ... N - 1                       which simplifies to
+        N * (N - 1) / 2
+"""
+# https://stackoverflow.com/questions/18859430/how-do-i-get-the-total-number-of-unique-pairs-of-a-set-in-the-database#answer-37847498
 class SolutionLoopLookupCount (Solution):
     def numIdenticalPairs(self, nums: List[int]) -> int:
         counts = {}
         for num in nums:
-           counts[num] = counts.get(num, 0) + 1
+            # Get the count of each distinct number. Can be used to find the unique pairs.
+            counts[num] = counts.get(num, 0) + 1
         # Permutation of pairs in a list of n size is n * n-1 / 2
         return int(sum(n * (n-1) * 0.5 for n in counts.values()))
 

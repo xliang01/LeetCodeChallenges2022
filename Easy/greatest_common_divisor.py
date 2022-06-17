@@ -16,6 +16,7 @@ class SolutionModIterative (Solution):
         return 1
 
 
+# REVIEW: Math - Euclidean
 class SolutionEuclidean (Solution):
     def findGCD(self, nums: List[int]) -> int:
         minNum = min(nums)

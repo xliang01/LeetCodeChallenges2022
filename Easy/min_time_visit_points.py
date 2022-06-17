@@ -4,6 +4,7 @@ class Solution:
     def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
         return 0
 
+# REVIEW: Math - Min between two points
 class SolutionMax (Solution):
     def minTimeToVisitAllPoints(self, points: List[List[int]]) -> int:
         ans = 0

@@ -4,6 +4,7 @@ class Solution:
     def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
         return False
 
+# REVIEW: Algo - Pointer Movement
 class SolutionPointers (Solution):
     def arrayStringsAreEqual(self, word1: List[str], word2: List[str]) -> bool:
         cIdx1 = cIdx2 = wIdx1 = wIdx2 = 0

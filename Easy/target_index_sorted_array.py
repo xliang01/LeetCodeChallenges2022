@@ -9,6 +9,7 @@ class SolutionSimple (Solution):
         sortedNums = sorted(nums)
         return [idx for idx, val in enumerate(sortedNums) if val == target]
 
+# REVIEW: Math - Array Index Position Using Counting
 class SolutionIterativeCount (Solution):
     def targetIndices(self, nums: List[int], target: int) -> List[int]:
         smaller = 0

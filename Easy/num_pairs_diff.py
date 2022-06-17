@@ -15,6 +15,7 @@ class SolutionLoop (Solution):
                     ans += 1
         return ans
 
+# REVIEW: Algo - Hashmap Counting
 # https://leetcode.com/problems/count-number-of-pairs-with-absolute-difference-k/discuss/2064524/Python-1-Line-O(N2)-and-Short-O(N)
 class SolutionMap (Solution):
     def countKDifference(self, nums: List[int], k: int) -> int:
